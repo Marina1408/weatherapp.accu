@@ -3,7 +3,7 @@ import logging
 
 from bs4 import BeautifulSoup
 
-from weatherapp.core import config
+from weatherapp.accu import config
 from weatherapp.core import decorators
 from weatherapp.core.abstract import WeatherProvider
 from weatherapp.core.exception import WeatherProviderError
