@@ -56,7 +56,7 @@ class AccuWeatherProvider(WeatherProvider):
 	    locations = self.get_locations_accu(config.ACCU_BROWSE_LOCATIONS)
 	    while locations:
 	    	for index, location in enumerate(locations):
-	    		print(f'{index + 1}. {location[0]}')
+	    		self.app.stdout.write(f'{index + 1}. {location[0]} \n')
 
 	    	try:
 	    		selected_index = int(input('Please select location: '))
